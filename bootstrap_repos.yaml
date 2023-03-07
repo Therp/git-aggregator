@@ -1,0 +1,10 @@
+# Set up the git-aggregator development repository.
+development/git-aggregator:
+  remotes:
+    acsone: https://github.com/acsone/git-aggregator
+    therp: git@github.com:Therp/git-aggregator
+  merges:
+    - acsone master
+    - therp support-pinning-rebased
+    - therp tox-py39-only
+  target: development
